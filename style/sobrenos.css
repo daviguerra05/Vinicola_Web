@@ -11,6 +11,13 @@ h1{
     font-family: 'Nunito Sans', sans-serif;
 }
 
+h2{
+    color:darkred;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+
 h4{
     padding:100px;
     text-align: center;
