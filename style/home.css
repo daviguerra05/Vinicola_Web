@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --mainColor:#73230F;
+    --whiteColor:#fefcf2;
+    --blackColor:#090000;
+}
+
+body{
+    color: var(--whiteColor);
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    color: inherit;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 1.2vw;
+    background: var(--blackColor);
+    user-select: none;
+}
+
+.middle{
+    font-size: 0.9vw;
+    display: flex;
+    gap: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.home video{
+    position: fixed;
+    z-index: -99;
+    align-self: center;
+    width: fit-content;
+}
+
+.home div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home div h1{
+    font-size: 5vw;
+}
+
+.home div p{
+    font-size: 2vw;
+}
+
+.home div button{
+    padding: 3% 15% 3% 15%;
+    margin-top: 5%;
+    cursor: pointer;
+    border: none;
+    color: var(--whiteColor);
+    background: var(--mainColor);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.conteudo{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: var(--blackColor);
+    background: var(--whiteColor);
+}
+
+.conteudo .image{
+    width: 30%;
+    height: 80vh;
+
+    background-image: url('../imagens/atendimento.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo .textos{
+    width: 30%;
+    height: 80vh;
+    margin-top: 3%;
+    /* background: green; */
+}
+
+.conteudo .textos h1{
+    font-size: 3vw;
+}
+
+.conteudo .textos p{
+    font-size: 1.5vw;
+}
+
+.conteudo .textos button{
+    margin-top: 5%;
+    padding: 3% 15% 3% 15%;
+    width: 50%;
+    height: 6vh;
+    cursor: pointer;
+    color: var(--whiteColor);
+    background: var(--mainColor);
+    border: none;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    background: var(--blackColor);
+}
+
+footer h1{
+    font-size: 1.5vw;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+footer div a{
+    color: #8f8f8f;
+}
