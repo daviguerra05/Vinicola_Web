@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="../style/localizacao.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localização</title>
 </head>
 <body>
-    
+    <center>
+    <div id="titulo">Localização</div>
+    <br>
+    <div id="texto">uma viagem ate a frança sem escalas!</div>
+    <br>
+   
+    <div id="map" style="width: 500px; height: 400px;"></div>
+<script>
+    var map = L.map('map').setView([-28.78280428539202, -51.2122135752856], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([51.5, -0.09]).addTo(map)
+      .bindPopup('Um marcador simples.')
+      .openPopup();
+</script>
+<br>
+</center>
+<br>
+<div id="link">
+    <a href="../paginas/home.html">home</a>
+</div>
+
 </body>
 </html>
