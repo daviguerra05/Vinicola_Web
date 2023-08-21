@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+
+    color:darkred;
+    font-size:3vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2{
+    color:darkred;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+
+h4{
+    padding:100px;
+    text-align: center;
+    color:darkslategray;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.center-text {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
+
+
+}
+
+body{
+
+    background: url('../imagens/vinheria.webp');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);     
+}

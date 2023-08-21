@@ -5,10 +5,17 @@
     margin: 0;
 }
 
+:root{
+    --mainColor:#73230F;
+    --whiteColor:#fefcf2;
+    --blackColor:#090000;
+}
+
 body{
-    color: white;
+    color: var(--whiteColor);
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
+    white-space:nowrap;
 }
 
 header{
@@ -16,25 +23,31 @@ header{
     position: fixed;
     z-index: 999;
     width: 100%;
-    height: 10vh;
+    padding: 1.2% 0 1.2% 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    background: black;
+    font-size: 23px;
+    background: var(--blackColor);
+    user-select: none;
 }
 
 .middle{
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
 }
 
-a{
+.right_hamburguer{
+    display: none;
+}
+
+header a{
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+header a:hover{
     text-decoration: underline;
 }
 
@@ -42,12 +55,133 @@ a:hover{
 .home{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100vh;
 }
 
 .home video{
+    position: fixed;
+    z-index: -99;
     align-self: center;
     width: fit-content;
+    filter: blur(2px) grayscale(20%);
+}
+
+.home div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home div h1{
+    font-size: 110px;
+}
+
+.home div p{
+    font-size: 50px;
+}
+
+.home div button{
+    font-size: 25px;
+    padding: 3% 10% 3% 10%;
+    margin-top: 5%;
+    cursor: pointer;
+    border: none;
+    color: var(--whiteColor);
+    background: var(--mainColor);
+    border-radius: 20px;
+}
+
+.home div button:hover{
+    background: var(--blackColor);
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+
+.conteudo{
+    width: 100%;
+    height: auto;
+    padding: 10% 0 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: var(--blackColor);
+    background: var(--whiteColor);
+}
+
+.conteudo .image{
+    width: 500px;
+    height: 700px;
+
+    background-image: url('../images/atendimento.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo .textos{
+    width: 500px;
+    height: 700px;
+    margin-top: 3%;
+    /* background: green; */
+}
+
+.conteudo .textos h1{
+    font-size: 80px;
+}
+
+.conteudo .textos p{
+    white-space:normal ;
+    font-size: 23px;
+}
+
+.conteudo .textos button{
+    margin-top: 5%;
+    padding: 0 15% 0 15%;
+    height: 9vh;
+    font-size: 23px;
+    cursor: pointer;
+    color: var(--whiteColor);
+    background: var(--mainColor);
+    border: none;
+}
+
+.conteudo .textos button:hover{
+    background: var(--blackColor);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: space-around;
+    background: var(--blackColor);
+}
+
+footer h1{
+    font-size: 30px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+footer div a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+footer div a:hover{
+    color: var(--mainColor);
 }

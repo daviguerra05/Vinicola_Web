@@ -15,7 +15,7 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
-    color: #F4F7F5;
+    color: #fefcf2;
 
     width: 100%;
     height: 100vh;
@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./imagens/welcome.jpg');
+    background: url('./images/welcome.jpg');
     background-position: center;
     background-repeat: no-repeat;
     backdrop-filter: blur(3px);
@@ -39,14 +39,14 @@ body{
 }
 
 h1{
-    font-size: 5vw;
+    font-size: 100px;
     font-weight: 700;
     letter-spacing: -3px;
     user-select:none;
 }
 
 a{
-    font-size: 1.5vw;
+    font-size: 30px;
     font-weight: 600;
     color: inherit;
     text-decoration: none;
@@ -54,11 +54,11 @@ a{
     border-radius: 20px;
     cursor: pointer;
     padding: 3% 14% 3% 14%;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 a:hover{
     transform: translateY(-10%) scale(110%);
-    background: orange;
-    box-shadow:  0 0 30px rgba(255, 166, 0, 0.286);
+    background: #73230F;
+    box-shadow:  0 0 30px #73230f86;
 }
