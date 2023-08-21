@@ -1,0 +1,24 @@
+#map {
+    position: relative;
+    border: 1px solid #ccc;
+    justify-content: flex-end;/* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 300px;
+    border: 1px solid #ccc;
+  }
+  
+  #titulo {
+    font-size: 40px;
+    color: blue; /* Cor azul */
+    font-family: "Arial", sans-serif; /* Substitua pelo nome da fonte desejada */
+  }
+  #texto{
+    font-size: 25px;
+    font-family: "Arial",
+
+  }
+  
+  
+  
+  
+  
