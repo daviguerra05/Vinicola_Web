@@ -1,0 +1,132 @@
+@import url('./home.css');
+
+@media screen and (max-width:800px){
+
+    @keyframes show_menu {
+        from{
+            height: 6vh;
+        }
+        to{
+            height: 60vh;
+        }
+    }
+    @keyframes hide_menu {
+        from{
+            height: 60vh;
+        }
+        to{
+            height: 6vh;
+        }
+    }
+    header{
+        height: 6vh;
+        font-size: 5vw;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left{
+        margin-left: 10%;
+    }
+    .middle{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .right_hamburguer{
+        margin-right: 10%;
+        display: block;
+    }
+/*-----------------------------------------------------------------------------------------*/
+    .home{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .home div h1{
+        font-weight: 800;
+        font-size: 12vw;
+    }
+    
+    .home div p{
+        font-size: 6vw;
+    }
+    
+    .home div button{
+        padding: 6% 15% 6% 15%;
+        font-size: 4vw;
+    }
+    
+/*-----------------------------------------------------------------------------------------*/
+
+    .conteudo{
+        width: 100%;
+        height: auto;
+        padding: 20% 0 60% 0;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo .image{
+        width: 80%;
+        height: 30vh;
+    }
+
+    .conteudo .textos{
+        width: 80%;
+        height: 30vh;
+        margin-top: 0%;
+        /* background: green; */
+    }
+
+    .conteudo .textos h1{
+        font-size: 12vw;
+    }
+
+    .conteudo .textos p{
+        font-size: 5vw;
+    }
+
+    .conteudo .textos button{
+        margin-top: 10%;
+        padding: 0 15% 0 15%;
+        height: 9vh;
+        font-size: 23px;
+    }
+
+/*-----------------------------------------------------------------------------------------*/
+ 
+    footer{
+        width: 100%;
+        height: auto;
+        padding: 10% 0 10% 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    footer h1{
+        font-size: 30px;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        margin-top: 2%;
+    }
+
+    footer div a{
+        font-size: 20px;
+    }
+}

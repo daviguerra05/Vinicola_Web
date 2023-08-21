@@ -38,6 +38,10 @@ header{
     gap: 4rem;
 }
 
+.right_hamburguer{
+    display: none;
+}
+
 header a{
     text-decoration: none;
     color: inherit;
@@ -81,13 +85,14 @@ header a:hover{
 }
 
 .home div button{
-    font-size: 1.2vw;
-    padding: 3% 15% 3% 15%;
+    font-size: 25px;
+    padding: 3% 10% 3% 10%;
     margin-top: 5%;
     cursor: pointer;
     border: none;
     color: var(--whiteColor);
     background: var(--mainColor);
+    border-radius: 20px;
 }
 
 .home div button:hover{
@@ -137,10 +142,9 @@ header a:hover{
 
 .conteudo .textos button{
     margin-top: 5%;
-    padding: 3% 15% 3% 15%;
-    width: 50%;
+    padding: 0 15% 0 15%;
     height: 9vh;
-    font-size: 1.2vw;
+    font-size: 23px;
     cursor: pointer;
     color: var(--whiteColor);
     background: var(--mainColor);
@@ -180,10 +184,4 @@ footer div a{
 
 footer div a:hover{
     color: var(--mainColor);
-}
-
-@media screen and (max-width:600px){
-    body{
-        background: #090000;
-    }
 }
