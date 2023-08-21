@@ -160,3 +160,7 @@ footer div{
 footer div a{
     color: #8f8f8f;
 }
+
+footer div a:hover{
+    color: var(--mainColor);
+}
