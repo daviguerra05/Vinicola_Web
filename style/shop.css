@@ -1,61 +1,69 @@
-*{
+* {
     padding: 0;
     margin: 0;
- 
+
 
 }
 
-body{
-    color: white;
+body {
+    background: url(../images/background-wine.jpg);
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
 }
-header{
+
+header {
     color: inherit;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 7%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-right: 2rem;
     background: black;
 }
-a{
+
+a {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
-h2{
+
+h2 {
     color: black;
 }
-img{
+
+img {
     border-radius: 15px;
 }
-table{
+
+table {
     width: 100%;
     height: fit-content;
 }
-tr{ 
+
+tr {
     display: flex;
     padding: 0 5% 3% 5%;
     justify-content: space-around;
 }
-td{
+
+td {
     max-width: 33%;
 
 }
-.hover_animation{
+
+.hover_animation {
     position: relative;
     color: #faf4d3;
     padding-bottom: 5px;
 }
 
-.hover_animation:after{
+.hover_animation:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -67,17 +75,20 @@ td{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-.left{
+
+.left {
     padding-left: 8%;
 }
-.right{
+
+.right {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
     align-content: center;
 }
-/*-------------------------Firt Section---------------------------*/
-.Type-Wine{
+
+/*-------------------------Type Wine(Sections)---------------------------*/
+.Type-Wine {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +96,8 @@ td{
     width: 100%;
     height: 90vh;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -93,11 +105,70 @@ td{
     width: 100%;
     height: auto;
 }
-.Title{
+
+.Title {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
     color: black;
     font-size: xx-large;
+}
+
+/*-------------------------------------------------------------------------------*/
+.Buy-button {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background-color: #5e2129;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.Buy-button:hover {
+    background-color: #5e2129;
+}
+
+.Buy-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.Buy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 10rem;
+}
+
+/*------------------------Animation Images---------------------------------------*/
+
+.images-wine {
+    width: 200px; /* Initial width of the container */
+    height: 200px; /* Initial height of the container */
+    overflow: hidden;
+    transition: width 0.5s ease, height 0.5s ease; /* Animation transition properties */
+    border-radius: 15px;
+}
+
+.images-wine:hover {
+    width: 300px; /* New width on hover */
+    height: 300px; /* New height on hover */
+}
+
+.images-wine img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.5s ease; /* Animation transition property for the image */
+}
+
+.images-wine:hover img {
+    transform: scale(1.2); /* Enlarge the image on hover */
 }
