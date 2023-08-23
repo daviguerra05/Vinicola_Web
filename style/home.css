@@ -11,6 +11,11 @@
     --blackColor:#090000;
 }
 
+::selection{
+    color: var(--whiteColor);
+    background: var(--mainColor);
+}
+
 body{
     color: var(--whiteColor);
     font-family: 'Nunito Sans', sans-serif;
@@ -31,6 +36,10 @@ header{
     font-size: 23px;
     background: var(--blackColor);
     user-select: none;
+}
+
+.left{
+    text-decoration: underline;
 }
 
 .middle{

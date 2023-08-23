@@ -34,14 +34,3 @@ function menu(){
 }
 
 
-    window.addEventListener('load', function() {
-        fetch('../paginas/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Erro ao carregar o cabeçalho:', error);
-            });
-    });
-
