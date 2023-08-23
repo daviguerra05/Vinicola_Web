@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('../style/header.css');
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+:root{
+    --mainColor:#73230F;
+    --whiteColor:#fefcf2;
+    --blackColor:#090000;
 }
 
 h1{
-
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
     color:darkred;
     font-size:3vw;
-    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 h2{
+    display: flex;
+    justify-content: center;
     color:darkred;
-    font-family: 'Nunito Sans', sans-serif;
+    
 
 }
 
@@ -22,7 +35,7 @@ h4{
     padding:100px;
     text-align: center;
     color:darkslategray;
-    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 .center-text {
@@ -46,7 +59,9 @@ h4{
 
 body{
 
-    background: url('../imagens/vinheria.webp');
+    background: url('../images/vinheria.webp');
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.5);     
+    background-color: rgba(255, 255, 255, 0.5);  
+    color: var(--whiteColor);
 }
+      
