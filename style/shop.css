@@ -6,7 +6,6 @@
 }
 
 body {
-    background: url(../images/background-wine.jpg);
     font-family: 'Nunito Sans', sans-serif;
     overflow-x: hidden;
 }
@@ -150,25 +149,25 @@ td {
 /*------------------------Animation Images---------------------------------------*/
 
 .images-wine {
-    width: 200px; /* Initial width of the container */
-    height: 200px; /* Initial height of the container */
+    width: 200px;
+    height: 200px; 
     overflow: hidden;
-    transition: width 0.5s ease, height 0.5s ease; /* Animation transition properties */
+    transition: width 0.5s ease, height 0.5s ease; 
     border-radius: 15px;
 }
 
 .images-wine:hover {
-    width: 300px; /* New width on hover */
-    height: 300px; /* New height on hover */
+    width: 300px;
+    height: 300px;
 }
 
 .images-wine img {
-    width: 100%; /* Make the image fill the container */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio */
-    transition: transform 0.5s ease; /* Animation transition property for the image */
+    object-fit: cover; 
+    transition: transform 0.5s ease; 
 }
 
 .images-wine:hover img {
-    transform: scale(1.2); /* Enlarge the image on hover */
+    transform: scale(1.2); 
 }
