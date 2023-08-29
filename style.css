@@ -13,6 +13,10 @@
     }
 }
 
+* {
+    overflow: hidden;
+}
+
 body{
     font-family: 'Nunito Sans', sans-serif;
     color: #fefcf2;
@@ -23,6 +27,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
     background: url('./images/welcome.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -61,4 +66,20 @@ a:hover{
     transform: translateY(-10%) scale(110%);
     background: #73230F;
     box-shadow:  0 0 30px #73230f86;
+}
+
+@media screen and (max-width:800px) {
+
+    @keyframes zoom_in{
+    from{
+        background-size: cover;
+    }
+    to{
+        background-size: cover;
+    }
+    }
+
+    h1{
+        font-size: 20vw;
+    }
 }

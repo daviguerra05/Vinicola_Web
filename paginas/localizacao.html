@@ -7,28 +7,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Localização</title>
+    <link rel="stylesheet" href="../style/localizacao.css">
+    <script src="../script/localizacao.js" defer></script>
 </head>
 <body>
-    <center>
-    <div id="titulo">Localização</div>
-    <br>
-    <div id="texto">uma viagem ate a frança sem escalas!</div>
-    <br>
+
+    <header>
+        <div class="left">Localização</div>
+    
+        <div class="middle">
+            <a href="../paginas/home.html">Home</a>
+            <a href="../paginas/sobrenos.html">Sobre nós</a>
+            <a href="../paginas/shop.html">Shop</a>
+        </div>
+         
+        <div class="right"><a href="../paginas/login.html">login</a></div>
+        
+        <div class="right_hamburguer" onclick="menu()">|||</div>
+    </header>
+    
+
+    <section id="titulo">
+        <h1>Estamos localizados Aqui</h1>
+    </section>
+    <section id="img">
+     <div id="map"></div>
+    </section>
+    
+    <a href="https://www.google.com.br/maps/search/Avenida+Vinte+e+Cinco+de+Julho,+700,+Centro,+Flores+da+Cunha/@-29.0231128,-51.1844215,17z/data=!3m1!4b1?entry=ttu"><button>Acessar</button></a>
+    
    
-    <div id="map" style="width: 500px; height: 400px;"></div>
-<script>
-    var map = L.map('map').setView([-28.78280428539202, -51.2122135752856], 8);
+    
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([-28.78280428539202, -51.2122135752856]).addTo(map)
-      .bindPopup('Estamos aqui!')
-      .openPopup();
-</script>
 <br>
-</center>
 <br>
 <div id="link">
     <a href="../paginas/home.html">home</a>

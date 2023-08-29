@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
-
+@import url('../style/header.css');
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +9,11 @@
     --mainColor:#73230F;
     --whiteColor:#fefcf2;
     --blackColor:#090000;
+}
+
+::selection{
+    color: var(--whiteColor);
+    background: var(--mainColor);
 }
 
 body{
@@ -31,6 +36,10 @@ header{
     font-size: 23px;
     background: var(--blackColor);
     user-select: none;
+}
+
+.left{
+    text-decoration: underline;
 }
 
 .middle{
@@ -82,21 +91,25 @@ header a:hover{
 
 .home div p{
     font-size: 50px;
+    color: var(--whiteColor);
+    background: var(--mainColor);
 }
 
 .home div button{
     font-size: 25px;
+    font-weight: 500;
     padding: 3% 10% 3% 10%;
     margin-top: 5%;
     cursor: pointer;
     border: none;
-    color: var(--whiteColor);
-    background: var(--mainColor);
+    color: var(--blackColor);
+    background: var(--whiteColor);
     border-radius: 20px;
 }
 
 .home div button:hover{
-    background: var(--blackColor);
+    color: var(--whiteColor);
+    background: var(--mainColor);
 }
 
 
@@ -132,6 +145,7 @@ header a:hover{
 }
 
 .conteudo .textos h1{
+    transform: translateX(-1%);
     font-size: 80px;
 }
 
