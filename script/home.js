@@ -33,4 +33,9 @@ function menu(){
     
 }
 
+const barsButton = document.querySelector(".bars");
+  const navBar = document.querySelector(".nav-bar");
 
+  barsButton.onclick = function () {
+    navBar.classList.toggle("active");
+  };
