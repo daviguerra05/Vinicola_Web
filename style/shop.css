@@ -5,32 +5,61 @@
 
 }
 
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    overflow-x: hidden;
+:root{
+    --mainColor:#73230F;
+    --whiteColor:#fefcf2;
+    --blackColor:#090000;
 }
 
-header {
+::selection{
+    color: var(--whiteColor);
+    background: var(--mainColor);
+}
+
+body{
+    color: var(--whiteColor);
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    white-space:nowrap;
+}
+
+header{
     color: inherit;
     position: fixed;
     z-index: 999;
     width: 100%;
-    height: 7%;
+    padding: 1.2% 0 1.2% 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-right: 2rem;
-    background: black;
+
+    font-size: 23px;
+    background: var(--blackColor);
+    user-select: none;
 }
 
-a {
+header a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
-a:hover {
+header a:hover{
     text-decoration: underline;
 }
+
+.middle{
+    display: flex;
+    gap: 4rem;
+}
+
+.right_hamburguer{
+    display: none;
+}
+
+.left{
+    text-decoration: underline;
+}
+
 
 h2 {
     color: black;
@@ -59,34 +88,46 @@ img {
     transition: transform 0.25s ease-out;
 }
 
-.left {
-    padding-left: 8%;
-}
 
-.right {
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-    align-content: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------Type Wine(Sections)---------------------------*/
 .Type-Wine {
+
     display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 110vh;
+}
+.color-variation{
+    background-color: #ea5447;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
     width: 80%;
     height: 70%;
+    justify-content: center;
+    align-items: center;
 }
 
 .Title {
@@ -169,42 +210,142 @@ img {
 .images-wine:hover img {
     transform: scale(1.2);
 }
-@media screen and (max-width:800px){ 
+
+
+@media screen and (max-width:800px) {
+
+    @keyframes show_menu {
+        from {
+            height: 6vh;
+        }
+
+        to {
+            height: 60vh;
+        }
+    }
+
+    @keyframes hide_menu {
+        from {
+            height: 60vh;
+        }
+
+        to {
+            height: 6vh;
+        }
+    }
+
+    header {
+        height: 6vh;
+        font-size: 5vw;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        margin-left: 10%;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .right_hamburguer {
+        margin-right: 10%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .Type-Wine {
+        height: 80vh;
+    }
+
+    .container {
+        height: 100%;
+        margin-top: 25%;
+    }
+
     .images-wine {
-        
-        width: 150px;
+
+        width: 100%;
         height: 270px;
         overflow: hidden;
         transition: width 0.5s ease, height 0.5s ease;
         border-radius: 15px;
-        margin-right: 20px; /* Adicione a margem direita desejada */
-        display: inline-block; /* Defina como inline-block */
+        margin-right: 20px;
     }
-    
+
     .images-wine:hover {
-        
-        width: 200px;
-        height: 200px;
+
+        width: 120%;
+        height: 300px;
     }
-    
+
     .images-wine img {
-        
-        width: 100%;
+
+        width: 80%;
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s ease;
-        margin-right: 20px; /* Adicione a margem direita desejada */
-        display: inline-block; /* Defina como inline-block */
     }
-    
+
     .images-wine:hover img {
         transform: scale(1.2);
     }
-   
-   
-    .card-wine{
-    width: 30%;
-    height: 80%;
+
+
+    .card-wine {
+        width: 30%;
+        height: 80%;
     }
-    
+
+}
+
+@media screen and (max-width:550px) {
+
+    .Type-Wine {
+        height: 70vh;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .Type-Wine {
+        height: 70vh;
+    }
+
+    .Buy-button {
+        font-size: smaller;
+        padding: 7px 12px;
+
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
 }

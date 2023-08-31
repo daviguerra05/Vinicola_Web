@@ -5,14 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/shop.css">
+  <script src="../script/home.js" defer></script>
   <title>Shop</title>
 </head>
 
 <body>
-  <header>
-    <div class="left"><a href="../paginas/home.html">Home</a></div>
+  <header id="header">
+    <div class="left">Shop</div>
 
-    <div class="right">
+    <div class="middle">
+      <a href="../paginas/home.html">Home</a>
+      <a href="../paginas/localizacao.html">Localização</a>
+      <a href="../paginas/sobrenos.html">Sobre nós</a>
+    </div>
+
+    <div class="right">Vinhos</div>
+    <div class="navbar">
 
       <a class="hover_animation" href="#Tinto">Tintos</a>
       <a class="hover_animation" href="#branco">branco</a>
@@ -20,9 +28,12 @@
       <a class="hover_animation" href="#Espumantes">Espumantes</a>
 
     </div>
+    <div class="right_hamburguer" onclick="menu()">|||</div>
   </header>
+  <!-- <a href="../paginas/login.html">Login</a> -->
 
-  <section id="Tinto" class="Type-Wine">
+
+  <section id="Tinto" class="Type-Wine color-variation">
     <div class="container">
       <div class="Title">
         <h1>Vinhos Tinto</h1>
@@ -125,7 +136,7 @@
   </section>
 
 
-  <section id="Rosé" class="Type-Wine">
+  <section id="Rosé" class="Type-Wine color-variation">
     <div class="container">
       <div class="Title">
         <h1>Vinhos Rosé</h1>
