@@ -40,7 +40,7 @@ h2{
     color:darkred;
 }
 
-#historia{
+#história{
     color:darkslategray;
 }
 
@@ -50,6 +50,10 @@ h2{
 /*responsividade*/
 @media screen and (max-width:800px){
     
+    section{
+        gap: 4rem;
+    }
+
     section div:nth-child(1){
         display: flex;
         flex-direction: column;
@@ -75,7 +79,7 @@ h2{
         
     }
 
-    #historia{
+    #história{
         height: 60%;
         font-size: 70%;
         display: flex;
