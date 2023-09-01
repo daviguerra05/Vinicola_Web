@@ -97,4 +97,63 @@ section{
 
 #link:hover{
   color: var(--mainColor);
+  
+} 
+
+/* --------------------------------------------------------- */
+
+@media screen and (max-width:800px){
+      @keyframes show_menu {
+        from {
+            height: 6vh;
+        }
+
+        to {
+            height: 60vh;
+        }
+    }
+
+    @keyframes hide_menu {
+        from {
+            height: 60vh;
+        }
+
+        to {
+            height: 6vh;
+        }
+    }
+
+    header {
+        height: 6vh;
+        font-size: 5vw;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        margin-left: 10%;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .right_hamburguer {
+        margin-right: 10%;
+        display: block;
+    }
+    #link{
+      font-weight: 700;
+      border-radius: 15px;
+      padding: 1% 3%;
+      bottom: 12%;
+      left:3%; 
+      font-size: 6vw;
+    }
 }
