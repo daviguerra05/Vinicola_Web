@@ -63,10 +63,13 @@ header a:hover{
 
 h2 {
     color: black;
+    font-size: small;
 }
 
 img {
     border-radius: 15px;
+    width: 200px;
+    height: 100%;
 }
 
 .hover_animation {
@@ -84,7 +87,7 @@ img {
     bottom: 0;
     left: 0;
     background-color: #faf4d3;
-    transform-origin: bottom right;
+    transform-origin: bottom right left;
     transition: transform 0.25s ease-out;
 }
     .bars {
@@ -103,24 +106,29 @@ img {
     }
 
     .nav-bar {
-    
-      top: 64px;
-      right: 0;
-      left: 0;
-      height: 0;
-      width: 30vw;
+      
+      position: absolute;
+      top: 50px;
+      right: 0%;
+      background-color: #090000;
+      height: 100%;
+      width: 240px;
       transition: 0.5s;
       overflow: hidden;
       display: flex;
+      flex-direction: column;
       text-align: center;
       justify-content: space-around;
       transition: 0.5s;
       opacity: 0;
+      border-bottom-left-radius: 25px;
     }
 
     .nav-bar.active {
-      height: 350px;
+      height: 200px;
       opacity: 1;
+      flex-direction: column;
+      width:  240px;
     }
 
 
@@ -336,7 +344,9 @@ img {
         width: 30%;
         height: 80%;
     }
-
+    .nav-bar{
+        display: none;
+    }
 }
 
 @media screen and (max-width:550px) {
