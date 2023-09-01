@@ -1,65 +1,60 @@
-const signUpButton = document.getElementById('SignUp');
-const signInButton = document.getElementById('SignIn');
+function login(){
+  let usuario = document.getElementById("usuario").value; 
+  let senha = document.getElementById("senha").value;
 
 
-signUpButton.addEventListener('click', () =>{
-    main.classList.add('right-panel-active');
-})
-
-signInButton.addEventListener('click', () =>{
-    main.classList.remove('right-panel-active');
-})
-
-const form = document.querySelector('form');
-
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); 
-
- 
-  const firstName = document.getElementById("name").value;
-  const email = document.getElementById("create_email").value;
-  const password = document.getElementById("create_password").value;
-  const confirmPassword = document.getElementById("create_password_confirm").value;
-
-
-  if (firstName.length < 5 || email.length < 5 || password.length < 5) {
-    alert('Os campos devem ter no minimo 5 caracteres.');
-    return;
-  }
 
   
-  if (password !== confirmPassword) {
-    alert('A senha e a confirmação de senha não correspondem.');
-    return;
+  if(usuario == 'Admin' && senha == "Senha"){
+    alert("Login Realizado com sucesso")
+    
+  }else{
+    alert("Login errado")
   }
 
+
+}
+
+function menu(){
+  var header = document.getElementById('header')  
+  var left = document.querySelector('.left')
+  var middle = document.querySelector('.middle')
+  var right = document.querySelector('.right')
+  var right_hamburguer = document.querySelector('.right_hamburguer')
+
+
+  header.classList.toggle('ativo')
+  if (header.className == 'ativo'){
+      header.style.animation = 'show_menu 0.5s ease forwards'
+      header.style.flexDirection = 'column'
+      header.style.justifyContent = 'space-evenly'
+      left.style.marginLeft = '0%'
+      right_hamburguer.style.marginRight = '0%'
+      right_hamburguer.innerHTML = 'X'
+      middle.style.display = 'flex'
+      middle.style.flexDirection ='column'
+      middle.style.alignItems = 'center'
+      middle.style.gap = '1rem'
+      right.style.display = 'block'
+  }
+  else{
+      header.style.animation = 'hide_menu 0.5s ease forwards'
+      header.style.flexDirection = 'row'
+      header.style.justifyContent = 'space-between'
+      left.style.marginLeft = '10%'
+      right_hamburguer.style.marginRight = '10%'
+      right_hamburguer.innerHTML = '|||'
+      middle.style.display = 'none'
+      right.style.display = 'none'
+  }
   
-  alert('Criação de login realizada com sucesso!');
+}
 
-const storedEmail = email;
-const storedPassword = password;
+const barsButton = document.querySelector(".bars");
+const navBar = document.querySelector(".nav-bar");
 
-const loginForm = document.querySelector('.sign-up form');
+barsButton.onclick = function () {
+  navBar.classList.toggle("active");
+};
 
-loginForm.addEventListener('submit', (event) => {
-  event.preventDefault(); 
 
-  const emailInput = document.querySelector('.sign-up input[name="email"]');
-  const passwordInput = document.querySelector('.sign-up input[name="pswd"]');
-  const enteredEmail = emailInput.value;
-  const enteredPassword = passwordInput.value;
-
-  if (enteredEmail === storedEmail && enteredPassword === storedPassword) {
-
-    alert('Login realizado com sucesso!');
-
-    window.location.href = "./src/pages/criar.html";
-
-  } else {
-    alert('Email ou senha inválidos. Tente novamente.');
-    emailInput.value = '';
-    passwordInput.value = '';
-  }
-});
-});

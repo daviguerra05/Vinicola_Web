@@ -1,60 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="../script/login.js" defer></script>
     <link rel="stylesheet" href="../style/login.css">
+    <script src="../script/login.js" defer></script>
+    <title>login</title>
 </head>
 <body>
-    <div class="container" id="main">
-        <div class="sign-in">
-            <form action="#">
-                <h1>Crie uma conta</h1>
-                <p></p>
-                <input type="text" name="txt" placeholder="Nome" required="" id="name">
-                <input type="email" name="email" placeholder="Email" required="" id="create_email">
-                <input type="password" name="pswd" placeholder="Senha" required="" id="create_password">
-                <input type="password" name="pswd" placeholder="Confrimação de senha" required="" id="create_password_confirm">
-                <button>Sign Up</button>
+    <header id="header">
+        <div class="left">DelVinho</div>
+
+        <div class="middle">
+            <a href="../paginas/sobrenos.html">Sobre nós</a>
+            <a href="../paginas/localizacao.html">Localização</a>
+            <a href="../paginas/shop.html">Shop</a>
+        </div>
+
+        <div class="right"><a href="../paginas/login.html">Login</a></div>
+
+        <div class="right_hamburguer" onclick="menu()">|||</div>
+    </header>
+    <section >
+        <div>
+           
+            <form id="login">
+                <h1>Login</h1>
+                <input type="text" placeholder="Usuario" id="usuario" required>
+                <input type="password" placeholder="Senha" id="senha" required>
+                <button onclick="login()">Enviar</button>
             </form>
         </div>
-
-        <div class="sign-up">
-            <form action="#">
-                <h1>Entrar</h1>
-                <p></p>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Senha" required="">
-                <a href="#">Esqueceu sua senha?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
-
-        <div class="overlay_container">
-            <div class="overlay">
-                <div class="overlay-left">
-                    <h1>Olá, amigo!</h1>
-                    <p>Insira suas informações para mudar o mundo com a gente!</p>
-                    <button id="SignIn">Sign Up</button>
-                </div>
-
-                <div class="overlay-right">
-                    <h1>Bem-vindo de volta</h1>
-                    <p>Para manter-se conectado insira suas informações</p>
-                    <button id="SignUp">Sign In</button>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="voltar">
-        <a href="../paginas/home.html">Voltar</a> 
-    </div>
-
-
-
-
+       
+    </section>
     
+</body>
+</html>
