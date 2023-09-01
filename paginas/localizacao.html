@@ -9,41 +9,30 @@
     <title>Localização</title>
     <link rel="stylesheet" href="../style/localizacao.css">
     <script src="../script/localizacao.js" defer></script>
+    <script src="../script/header.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <div class="left">Localização</div>
-    
+    <header id="header">
+        <div class="left"><a href="../paginas/home.html">DelVinho</a></div>
+
         <div class="middle">
-            <a href="../paginas/home.html">Home</a>
             <a href="../paginas/sobrenos.html">Sobre nós</a>
+            <a href="../paginas/localizacao.html">Localização</a>
             <a href="../paginas/shop.html">Shop</a>
         </div>
-         
-        <div class="right"><a href="../paginas/login.html">login</a></div>
-        
+
+        <div class="right"><a href="../paginas/login.html">Login</a></div>
+
         <div class="right_hamburguer" onclick="menu()">|||</div>
     </header>
     
-
-    <section id="titulo">
-        <h1>Estamos localizados Aqui</h1>
+    <section>
+        <div id="map"></div> 
+        <a href="https://www.google.com/maps/place/29%C2%B001'23.2%22S+51%C2%B011'03.9%22W/@-29.0214006,-51.1871359,16z/data=!4m4!3m3!8m2!3d-29.0231111!4d-51.1844167?entry=ttu"  id="link" target="_blank">
+            Flores da Cunha, RS, 95270-000
+        </a>   
     </section>
-    <section id="img">
-     <div id="map"></div>
-    </section>
-    
-    <a href="https://www.google.com.br/maps/search/Avenida+Vinte+e+Cinco+de+Julho,+700,+Centro,+Flores+da+Cunha/@-29.0231128,-51.1844215,17z/data=!3m1!4b1?entry=ttu"><button>Acessar</button></a>
-    
-   
-    
-
-<br>
-<br>
-<div id="link">
-    <a href="../paginas/home.html">home</a>
-</div>
 
 </body>
 </html>
