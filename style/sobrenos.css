@@ -86,5 +86,50 @@ h2{
         gap: 2rem;
         justify-content: center;
     }
+        @keyframes show_menu {
+          from {
+              height: 6vh;
+          }
+  
+          to {
+              height: 60vh;
+          }
+      }
+  
+      @keyframes hide_menu {
+          from {
+              height: 60vh;
+          }
+  
+          to {
+              height: 6vh;
+          }
+      }
+  
+      header {
+          height: 6vh;
+          font-size: 5vw;
+          display: flex;
+          gap: 2rem;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      .left {
+          margin-left: 10%;
+      }
+  
+      .middle {
+          display: none;
+      }
+  
+      .right {
+          display: none;
+      }
+  
+      .right_hamburguer {
+          margin-right: 10%;
+          display: block;
+      }
 
 }
