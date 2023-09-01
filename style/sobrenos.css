@@ -6,62 +6,131 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-
 :root{
     --mainColor:#73230F;
     --whiteColor:#fefcf2;
     --blackColor:#090000;
 }
 
-h1{
-    padding-top: 15rem;
+body{
+    background-image: url('../images/vinheria.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--whiteColor);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+h1{
     color:darkred;
     font-size:3vw;
-    
 }
 
 h2{
-    display: flex;
-    justify-content: center;
     color:darkred;
-    
-
 }
 
-
-h4{
-    padding:100px;
-    text-align: center;
+#história{
     color:darkslategray;
+    padding: 5rem;
+}
+
+
+
+
+/*responsividade*/
+@media screen and (max-width:800px){
     
+    section{
+        gap: 4rem;
+    }
+
+    section div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+    }
+
+    h1{
+        height: 20%;;
+        font-size: 105%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    h2{
+        height: 20%;;
+        font-size: 95%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        
+    }
+
+    #história{
+        height: 60%;
+        font-size: 70%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+        @keyframes show_menu {
+          from {
+              height: 6vh;
+          }
+  
+          to {
+              height: 60vh;
+          }
+      }
+  
+      @keyframes hide_menu {
+          from {
+              height: 60vh;
+          }
+  
+          to {
+              height: 6vh;
+          }
+      }
+  
+      header {
+          height: 6vh;
+          font-size: 5vw;
+          display: flex;
+          gap: 2rem;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      .left {
+          margin-left: 10%;
+      }
+  
+      .middle {
+          display: none;
+      }
+  
+      .right {
+          display: none;
+      }
+  
+      .right_hamburguer {
+          margin-right: 10%;
+          display: block;
+      }
+
 }
-
-.center-text {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px); 
-    z-index: -1; 
-
-
-}
-
-body{
-
-    background: url('../images/vinheria.webp');
-    background-size: cover;
-    background-color: rgba(255, 255, 255, 0.5);  
-    color: var(--whiteColor);
-}
-      

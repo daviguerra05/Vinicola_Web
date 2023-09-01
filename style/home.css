@@ -92,7 +92,6 @@ header a:hover{
 .home div p{
     font-size: 50px;
     color: var(--whiteColor);
-    background: var(--mainColor);
 }
 
 .home div button{
