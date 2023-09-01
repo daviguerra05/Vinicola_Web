@@ -112,7 +112,7 @@ img {
       right: 0%;
       background-color: #090000;
       height: 100%;
-      width: 240px;
+      width: 100%;
       transition: 0.5s;
       overflow: hidden;
       display: flex;
@@ -121,14 +121,12 @@ img {
       justify-content: space-around;
       transition: 0.5s;
       opacity: 0;
-      border-bottom-left-radius: 25px;
     }
 
     .nav-bar.active {
       height: 200px;
       opacity: 1;
       flex-direction: column;
-      width:  240px;
     }
 
 
