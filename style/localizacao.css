@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
 @import url('../style/header.css');
 *{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-
 
 :root{
     --mainColor:#73230F;
     --whiteColor:#fefcf2;
     --blackColor:#090000;
+}
+
+::selection{
+    color: var(--whiteColor);
+    background: var(--mainColor);
+}
+
+body{
+    color: var(--whiteColor);
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+    white-space:nowrap;
 }
 
 header{
@@ -28,6 +38,19 @@ header{
     user-select: none;
 }
 
+.left{
+    text-decoration: underline;
+}
+
+.middle{
+    display: flex;
+    gap: 4rem;
+}
+
+.right_hamburguer{
+    display: none;
+}
+
 header a{
     text-decoration: none;
     color: inherit;
@@ -37,74 +60,41 @@ header a:hover{
     text-decoration: underline;
 }
 
-body{
-    color: var(--whiteColor);
-    font-family: 'Nunito Sans', sans-serif;
-    overflow-x: hidden;
-    white-space:nowrap;
-}
+/* --------------------------------------------------------- */
 
-#titulo{
-    display:flex ;
-    justify-content: center;
-}
-
-#img{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    
+section{
+  width: 100%;
+  height: 100vh;
 }
 
 #map{
-    margin-top: 15%;
-    width: 50%;
-    height: 50%;
-    
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width:800px){
-
-}body {
-  margin: 0;
-  padding: 0;
+.leaflet-bar{
+  display: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+#link{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blackColor);
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(3px) ;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.445);
+  border-radius: 15px;
+  padding: 1% 3%;
+  position: absolute;
+  z-index: 9;
+  bottom: 12%;
+  left:30%;
+  font-size: 2.5vw;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-  .middle{
-    font-size: 24px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    
-  }
+#link:hover{
+  color: var(--mainColor);
 }
